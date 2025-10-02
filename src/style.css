@@ -1,9 +1,12 @@
+body {
+    margin: 0;
+}
+
 .father {
     display: grid;
-    grid-template-columns: [cucumber] 100px [potato] 200px [banana] 50px [brocoli];
-    grid-template-rows: [korea] 200px [thailand] 100px [greece];
-    row-gap: 10px;
-    column-gap: 20px;
+    min-height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .child {
@@ -15,22 +18,3 @@
     justify-content: center;
 }
 
-.child:first-child {
-    /* 
-    grid-row-start: 1;
-    grid-row-end: -1; 
-    grid-row: korea / greece;
-    grid-row: span 2;
-    */
-    background-color: yellow;
-}
-
-.child:last-child {
-    /* 
-    grid-column-start: 2;
-    grid-column-end: -1; 
-    grid-column: potato / brocoli;
-    */
-    background-color: turquoise;
-    grid-column: potato / span 2;
-}
