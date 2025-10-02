@@ -22,7 +22,7 @@
     grid-row: korea / greece;
     grid-row: span 2;
     */
-    background-color: yellow;
+    background-color: blue;
 }
 
 .child:last-child {
